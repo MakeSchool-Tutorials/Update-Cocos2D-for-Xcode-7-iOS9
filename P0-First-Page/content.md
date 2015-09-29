@@ -10,7 +10,7 @@ Let's go through the steps required to bring a project up to the latest version 
 
 We need two tools to create a new project with Cocos2D.  The first is Xcode 7, of course.  Its available on the [app store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).  Second, SpriteBuilder is an open source tool that streamlines content creation and works with Cocos2D.  SpriteBuilder can be downloaded from the [app store](https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12) or from [www.spritebuilder.com](http://www.spritebuilder.com).  If you have SpriteBuilder already, verify it is the latest version (1.4.9). 
 
-![](./spritebuilder_version.png "SpriteBuilder Version 1.4.9")
+![SpriteBuilder Version 1.4.9](./spritebuilder_version.png "SpriteBuilder Version 1.4.9")
 
 With these tools we can begin.  Create a new project in SpriteBuilder, and publish it.
 
@@ -22,14 +22,14 @@ Now that we have a project, we can go ahead and update the version of Cocos2D it
 
 This will download the latest version of Cocos2D (and its dependencies).  Now to update the project.  Navigate to the new version and copy three folders: cocos2d, cocos2d-ui and external.
 
-![](./update_select.png "3 Highlighted Folders")
+![3 Highlighted Folders](./update_select.png "3 Highlighted Folders")
 
 > [info]
 > You can hold command (⌘) to select multiple folders at once.
 
 These three folders contain the changes that need to be moved into the project.  The next part is finding the location of Cocos2D in your project.  It's located in the folder named "cocos2d-iphone" inside the project.  Pasting the new folders will prompt a warning that you are trying to replace folders that exist already.  No files or subfolders were renamed, so doing this OK.  It won't break anything.
 
-![](./copy_folders.gif "Navigating and Pasting Folders")
+![Navigating and Pasting Folders](./copy_folders.gif "Navigating and Pasting Folders")
 
 With the new folders in place, we can move over and tie things up in XCode.  
 
@@ -37,11 +37,11 @@ With the new folders in place, we can move over and tie things up in XCode.
 
 Now that the source has been updated, its time to make sure there are no problems building the project.  Open the project with Xcode.  The last change before the project is ready is to check the deployment target for the project and each subproject.  Make sure that each project is set to target at least iOS 8.0.  Change any project that targets earlier than this.
 
-![](./new_targets.gif "Update Project Targets")
+![Update Project Targets](./new_targets.gif "Update Project Targets")
 
 We're nearly finished with the update.  Last task is to clean the project and build folder.  Cleaning the project is easy enough, its right in the "Product" drop down menu.  Finding the "Clean Build Folder..." function can be tricky if you don't know where to look.  Its revealed by holding the option key (⌥) while selecting the "Product" drop down.
 
-![](./such_clean.gif "Twice Cleaned Project")
+![Twice Cleaned Project](./such_clean.gif "Twice Cleaned Project")
 
 Now with no trace of the previous version we are ready to build the project.  This will take a moment, but should be successful.  There may be some new or unusual warnings.  They will be cleared up in future releases of Cocos2D.
 
