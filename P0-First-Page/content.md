@@ -2,7 +2,7 @@
 title: "Update Cocos2D to support XCode 7!"
 ---
 
-Apple's release of Xcode 7 brings Swift 2 and support for the latest versions of each of its platforms.  Cocos2D is still getting updates to stay compatible with Apple's changes.  Unfortunately, SpriteBuilder has gone into stasis and will not be updated much in the near future.  While it is still functional it will no longer deliver updates to Cocos2D.  This tutorial will cover how to do this process yourself.
+Apple's release of Xcode 7 brings Swift 2 and support for the latest versions of each of its platforms.  Cocos2D is still getting updates to stay compatible with Apple's changes.  Unfortunately, SpriteBuilder has not been updated recently and may not be updated much in the near future.  While it is still functional it will no longer deliver updates to Cocos2D.  This tutorial will cover how to do this process yourself.
 
 #Getting Started
 
