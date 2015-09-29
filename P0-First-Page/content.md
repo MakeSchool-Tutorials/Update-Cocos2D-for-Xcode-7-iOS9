@@ -2,29 +2,17 @@
 title: "Update Cocos2D to support XCode 7!"
 ---
 
-0. Tools - OK
-1. Create SB project from scratch - OK
-2. Publish project - OK
-3. Download newest Cocos2D from github, provide link - OK
-4. Copy cocos2d, cocos2d-ui and external folders - OK
-5. replace them in the project folder - OK
-6. open project in XCode - OK
-7. change iOS targets in all subprojects to 6.0
-8. clean entire project (incl. subprojects)
-9. build and run to ensure function
-
-Apple's release of XCode 7 brings Swift 2 and support for the latest versions of each of its platforms.  Need to say something here about SB being in stasis and unable to deliver cocos2d updated.
+Apple's release of Xcode 7 brings Swift 2 and support for the latest versions of each of its platforms.  Cocos2D is still getting updates to stay compatible with Apple's changes.  Unfortunately, SpriteBuilder has gone into stasis and will not be updated much in the near future.  While it is still functional it will no longer deliver updates to Cocos2D.  This tutorial will cover how to do this process yourself.
 
 #Getting Started
 
 Let's go through the steps required to bring a project up to the latest version of Cocos2d.  We'll start from the very beginning, from a brand new project created from SpriteBuilder.  If you are updating an existing project, I suggest trying it with a fresh project first.  
 
-We need a few tools to create a new project with Cocos2D.  The first is Xcode 7, of course.  Its available on the [app store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).  SpriteBuilder is an open source tool that streamlines content creation and works with Cocos2D.  SpriteBuilder can be downloaded from the [app store](https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12) or from [www.spritebuilder.com](http://www.spritebuilder.com).  If you have SpriteBuilder already, verify it is the latest version (1.4.9). 
+We need two tools to create a new project with Cocos2D.  The first is Xcode 7, of course.  Its available on the [app store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).  Second, SpriteBuilder is an open source tool that streamlines content creation and works with Cocos2D.  SpriteBuilder can be downloaded from the [app store](https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12) or from [www.spritebuilder.com](http://www.spritebuilder.com).  If you have SpriteBuilder already, verify it is the latest version (1.4.9). 
 
 ![](./spritebuilder_version.png)
 
-With these tools we can begin.  Create a new project in SpriteBuilder, and publish it.  
-
+With these tools we can begin.  Create a new project in SpriteBuilder, and publish it.
 
 #Update Cocos2D
 
@@ -47,4 +35,15 @@ With the new folders in place, we can move over and tie things up in XCode.
 
 #Cleanup and Build
 
+Now that the source has been updated, its time to make sure there are no problems building the project.  Open the project with Xcode.  The last step before the project is ready is to check the deployment target for the project and each subproject.  Make sure that each project is set to target at least iOS 8.0.  Change any project that targets earlier than this.
+
+![](./new_targets.gif)
+
+We're nearly finished with the update.  Last task is to clean the project and build folder.  Cleaning the project is easy enough, its right in the "Product" drop down menu.  Finding the "Clean Build Folder..." function can be tricky if you don't know where to look.  Its revealed by holding the option key (⌥) while selecting the "Product" drop down.
+
+![](./such_clean.gif)
+
+Now with no trace of the previous version we are ready to build the project.  This will take a moment, but should be successful.  There may be some new or unusual warnings.  They will be cleared up in future releases.
+
+#Summary
 
