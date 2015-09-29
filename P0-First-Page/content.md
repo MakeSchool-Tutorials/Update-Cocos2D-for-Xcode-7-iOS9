@@ -6,7 +6,7 @@ Apple's release of Xcode 7 brings Swift 2 and support for the latest versions of
 
 #Getting Started
 
-Let's go through the steps required to bring a project up to the latest version of Cocos2d.  We'll start from the very beginning, from a brand new project created from SpriteBuilder.  If you are updating an existing project, I suggest trying it with a fresh project first.  
+Let's go through the steps required to bring a project up to the latest version of Cocos2D.  We'll start from the very beginning, from a brand new project created from SpriteBuilder.  If you are updating an existing project, I suggest trying it with a fresh project first.  
 
 We need two tools to create a new project with Cocos2D.  The first is Xcode 7, of course.  Its available on the [app store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).  Second, SpriteBuilder is an open source tool that streamlines content creation and works with Cocos2D.  SpriteBuilder can be downloaded from the [app store](https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12) or from [www.spritebuilder.com](http://www.spritebuilder.com).  If you have SpriteBuilder already, verify it is the latest version (1.4.9). 
 
@@ -35,7 +35,7 @@ With the new folders in place, we can move over and tie things up in XCode.
 
 #Cleanup and Build
 
-Now that the source has been updated, its time to make sure there are no problems building the project.  Open the project with Xcode.  The last step before the project is ready is to check the deployment target for the project and each subproject.  Make sure that each project is set to target at least iOS 8.0.  Change any project that targets earlier than this.
+Now that the source has been updated, its time to make sure there are no problems building the project.  Open the project with Xcode.  The last change before the project is ready is to check the deployment target for the project and each subproject.  Make sure that each project is set to target at least iOS 8.0.  Change any project that targets earlier than this.
 
 ![](./new_targets.gif)
 
@@ -43,7 +43,8 @@ We're nearly finished with the update.  Last task is to clean the project and bu
 
 ![](./such_clean.gif)
 
-Now with no trace of the previous version we are ready to build the project.  This will take a moment, but should be successful.  There may be some new or unusual warnings.  They will be cleared up in future releases.
+Now with no trace of the previous version we are ready to build the project.  This will take a moment, but should be successful.  There may be some new or unusual warnings.  They will be cleared up in future releases of Cocos2D.
 
 #Summary
 
+Although it is sad that SpriteBuilder won't be supported for the near future, you now can update Cocos2D when changes are announced.  It is a three step process: download the latest changes from the [Cocos2D repository](https://github.com/cocos2d/cocos2d-objc), copy three folders into the existing project, and clean both the project and build folders.  This process should continue to work for future versions of Cocos2D up to a major version change.  Happy coding!
