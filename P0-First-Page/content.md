@@ -9,7 +9,7 @@ Apple's release of Xcode 7 brings Swift 2 and support for the latest versions of
 
 Let's go through the steps required to bring a project up to the latest version of Cocos2D.  We'll start from the very beginning, from a brand new project created from SpriteBuilder.  If you are updating an existing project, I suggest trying it with a fresh project first.  
 
-We need two tools to create a new project with Cocos2D.  The first is Xcode 7, of course.  Its available on the [app store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).  Second, SpriteBuilder is an open source tool that streamlines content creation and works with Cocos2D.  SpriteBuilder can be downloaded from the [app store](https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12) or from [www.spritebuilder.com](http://www.spritebuilder.com).  If you have SpriteBuilder already, verify it is the latest version (1.4.9). 
+We need two tools to create a new project with Cocos2D.  The first is Xcode 7, of course.  Its available on the [app store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).  Second, SpriteBuilder is an open source tool that streamlines content creation and works with Cocos2D.  SpriteBuilder can be downloaded from the [app store](https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12) or from [www.spritebuilder.com](http://www.spritebuilder.com).  If you have SpriteBuilder already, verify it is the latest version (1.4.9).
 
 ![SpriteBuilder Version 1.4.9](./spritebuilder_version.png "SpriteBuilder Version 1.4.9")
 
@@ -17,11 +17,11 @@ With these tools we can begin.  Create a new project in SpriteBuilder, and publi
 
 #Update Cocos2D
 
-Now that we have a project, we can go ahead and update the version of Cocos2D it is using.  Rather than rely on SpriteBuilder to perform the update, we'll do it manually.  To get the most up to date version, download the project straight from its repository located [here](https://github.com/cocos2d/cocos2d-objc).  If you want to clone the repository from the command line, the command is:
+Now that we have a project, we can go ahead and update the version of Cocos2D it is using.  Rather than rely on SpriteBuilder to perform the update, we'll do it manually.  To get the most up to date version, clone the project straight from its repository located using the following terminal command:
 
-	git clone --recursive https://github.com/cocos2d/cocos2d-objc.git
+git clone --recursive https://github.com/cocos2d/cocos2d-objc.git
 
-This will download the latest version of Cocos2D (and its dependencies).  Now to update the project.  Navigate to the new version and copy three folders: cocos2d, cocos2d-ui and external.
+This will download the latest version of Cocos2D (and its dependencies).  If you aren't comfortable using the terminal, download the project from the link [here](https://raw.githubusercontent.com/MakeSchool-Tutorials/Update-Cocos2D-for-Xcode-7-iOS9/master/cocos2d-objc.zip).  Now to update the project.  Navigate to the new version and copy three folders: cocos2d, cocos2d-ui and external.
 
 ![3 Highlighted Folders](./update_select.png "3 Highlighted Folders")
 
