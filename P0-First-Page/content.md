@@ -20,7 +20,7 @@ Now that we have a project, we can go ahead and update the version of Cocos2D it
 
 git clone --recursive https://github.com/cocos2d/cocos2d-objc.git
 
-This will download the latest version of Cocos2D (and its dependencies).  If you aren't comfortable using the terminal, download the project from the link [here](https://raw.githubusercontent.com/afbrandt/Update-Cocos2D-for-Xcode-7-iOS9/master/cocos2d-objc.zip).  Now to update the project.  Navigate to the new version and copy three folders: cocos2d, cocos2d-ui and external.
+This will download the latest version of Cocos2D (and its dependencies).  If you aren't comfortable using the terminal, download the project from the link [here](https://raw.githubusercontent.com/MakeSchool-Tutorials/Update-Cocos2D-for-Xcode-7-iOS9/master/cocos2d-objc.zip).  Now to update the project.  Navigate to the new version and copy three folders: cocos2d, cocos2d-ui and external.
 
 ![3 Highlighted Folders](./update_select.png "3 Highlighted Folders")
 
